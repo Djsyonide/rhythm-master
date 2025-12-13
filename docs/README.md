@@ -17,7 +17,7 @@ Built on the **WAX blockchain**, the game blends precise rhythm gameplay, on-cha
 
 ## 🎮 Play the Game
 👉 **Live Demo (GitHub Pages):**  
-https://YOUR_USERNAME.github.io/rhythm-master/
+https://Djsyonide.github.io/rhythm-master/
 
 ---
 
