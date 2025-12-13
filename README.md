@@ -67,6 +67,18 @@ Mouse clicking on lanes is also supported.
 
 ---
 
+## 📸 Gameplay Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/gameplay-1.png" width="48%">
+  <img src="assets/screenshots/gameplay-2.png" width="48%">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/sublime-hit.png" width="48%">
+  <img src="assets/screenshots/leaderboard.png" width="48%">
+</p>
+
 ## 🏆 Leaderboards & Seasons
 
 - Per-track leaderboards
