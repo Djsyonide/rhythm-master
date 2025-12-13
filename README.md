@@ -80,9 +80,9 @@ Mouse clicking on lanes is also supported.
 ## 🎥 Gameplay Video
 
 ▶️ **Watch Gameplay Demo**  
-https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+(https://www.youtube.com/watch?v=n0W7z29AC8o)
 
-[![Rhythm Master Gameplay](assets/screenshots/gameplay-1.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Rhythm Master Gameplay](assets/screenshots/gameplay-1.png)](https://www.youtube.com/watch?v=n0W7z29AC8o)
 
 ## 🏆 Leaderboards & Seasons
 
