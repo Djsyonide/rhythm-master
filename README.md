@@ -77,6 +77,13 @@ Mouse clicking on lanes is also supported.
   <img src="assets/screenshots/leaderboard.png" width="48%">
 </p>
 
+## 🎥 Gameplay Video
+
+▶️ **Watch Gameplay Demo**  
+https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+
+[![Rhythm Master Gameplay](assets/screenshots/gameplay-1.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
 ## 🏆 Leaderboards & Seasons
 
 - Per-track leaderboards
