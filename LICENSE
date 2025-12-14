@@ -1,50 +1,7 @@
+Copyright <2025> <Sublime Sounds>
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## 📄 Generated PDFs (Ready to Download)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-All PDFs are already generated for you:
-
-- 📘 **Technical Specifications**  
-  [Download PDF](sandbox:/mnt/data/Rhythm_Master_Technical_Specifications.pdf)
-
-- 📗 **User Manual**  
-  [Download PDF](sandbox:/mnt/data/Rhythm_Master_User_Manual.pdf)
-
-- ✅ **Beta + Release Candidate Checklist (with Tester Sign-Off)**  
-  [Download PDF](sandbox:/mnt/data/Rhythm_Master_Beta_RC_Checklist.pdf)
-
----
-
-## 🧪 Tester Sign-Off (Included in PDF)
-
-Each tester can sign off with:
-- Name
-- Device / OS
-- Browser
-- Pass / Fail
-- Notes
-
-This makes it **publisher-ready** and **audit-friendly**.
-
----
-
-## 🎯 What You Have Now
-
-✔ GitHub-ready README  
-✔ Versioning & badges  
-✔ Tech specs PDF  
-✔ User manual PDF  
-✔ Beta + RC checklist PDF  
-✔ Tester sign-off sections  
-✔ Known issues documented  
-
-You’re officially at **Release Candidate preparation level** 🚀
-
-If you want next:
-- Public changelog (`CHANGELOG.md`)
-- GitHub Issues / Labels structure
-- Launch checklist
-- Production hardening review
-
-Just say the word.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
