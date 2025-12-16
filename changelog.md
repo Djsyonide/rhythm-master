@@ -1,3 +1,159 @@
+# 🎵 Sublime Sounds – Rhythm Master  
+## Development Log / Changelog (16/12/25)
+
+---
+
+## ✅ New Features
+
+### 🎮 Gameplay Enhancements
+- **Combo Celebrations Added**
+  - `10x SUBLIME hits` → **GREAT COMBO!** (blue)
+  - `20x SUBLIME hits` → **AMAZING COMBO!** (larger blue)
+  - `30x SUBLIME hits` → **SUBLIME COMBO!** (large pink)
+  - Animations display center-screen for ~2 seconds
+  - Uses dedicated overlay layer to ensure visibility above all UI
+
+- **SUBLIME-Only Combo Logic**
+  - Combo counter **only increases on SUBLIME hits**
+  - OK / MISS immediately resets combo
+  - Combo milestone tracking prevents duplicate celebration spam
+
+- **Improved Hit Feedback**
+  - Stronger visual feedback for SUBLIME hits
+  - Refined screen shake + spark effects
+
+---
+
+## 💳 Payment System Improvements
+
+### Per-Track Payment Logic
+- Users must pay **100 SSN per track**
+- Payment resets when switching tracks
+- Payment required again after each completed game (non-admins)
+
+### Admin Bypass
+- Admin wallets:
+  - Bypass SSN payment
+  - Payment button hidden
+  - Start button always enabled
+
+### Payment UX Improvements
+- Pay button disabled while processing
+- Success/failure feedback added
+- Transaction link displayed on success
+
+---
+
+## 🔐 WAX Login & Session Handling
+
+- Fixed incorrect wallet assignment
+  - Switched to `wax.userAccount` (reliable)
+- Login button disabled during gameplay
+- Login restored after game end
+- Improved error handling for failed login attempts
+
+---
+
+## 🎶 Media & Playback Fixes
+
+- **Unmuted Audio on Game Start**
+  - Explicit unmute + volume restore for audio & video
+- Improved IPFS gateway fallback for audio & video
+- Robust handling for:
+  - Audio-only tracks
+  - Video-only tracks
+  - Mixed media tracks
+
+---
+
+## 🖼️ NFT Track Loading Improvements
+
+### AtomicAssets Integration
+- Fetches NFTs by:
+  - Owner
+  - Collection name
+- Supports audio, video, animation, and media fields
+
+### Duplicate Prevention
+- Tracks deduplicated by **template_id**
+- First valid asset per template used
+- Later assets can backfill missing image data
+
+### Metadata Handling
+- Safely merges:
+  - `template.immutable_data`
+  - `asset.data`
+- Supports:
+  - `audio`
+  - `video`
+  - `animation_url`
+  - `image / img / media`
+
+---
+
+## 🧠 Game State Stability
+
+- Notes cleared correctly on:
+  - Game end
+  - Restart
+- Prevents duplicate note spawning
+- Fixed paused/resumed state when rotating mobile devices
+- Ensured game loop stops cleanly on end
+
+---
+
+## 📱 Mobile & UX Improvements
+
+- Orientation lock overlay added for mobile portrait mode
+- Game auto-pauses on invalid orientation
+- Touch gestures locked only during gameplay
+- Improved button disabling to prevent accidental actions
+
+---
+
+## 🏆 Leaderboard
+
+- Per-track leaderboard keys
+- Scores stored locally
+- Higher score replaces previous score for same user
+- Sorted descending, top 10 only
+
+---
+
+## 🐞 Bugs Fixed
+
+- Muted audio/video on play
+- Combo counter incrementing on non-SUBLIME hits
+- Duplicate NFTs appearing in track list
+- Admins incorrectly required to pay
+- Login button active during gameplay
+- Notes persisting after game end
+- Inconsistent media loading from IPFS gateways
+
+---
+
+## ⚠️ Known Issues (To Address Later)
+
+- Some templates still missing background images
+  - Likely inconsistent AtomicAssets metadata
+  - Requires deeper per-template inspection
+- Some video-only templates still inconsistent across gateways
+
+---
+
+## 🛠️ Next Steps (Planned)
+
+- Alphabetical track sorting
+- Improved fallback image logic
+- Template-level debugging tool
+- Server-side leaderboard
+- Visual track previews in selector
+
+---
+
+_Logged after extended debugging & feature iteration session_  
+_🫡 You earned the rest — ship it tomorrow_
+
 # Changelog
 All notable changes to **Rhythm Master** will be documented in this file.
 
@@ -9,7 +165,7 @@ and is currently in **Beta**.
 
 ## [0.9.0] – Beta Release Candidate  
 **Status:** Feature-complete beta  
-**Date:** 2025-09-XX
+**Date:** 2025-09-15
 
 ### Added
 - Mobile orientation detection with **pause-on-rotate**
