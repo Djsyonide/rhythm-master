@@ -12,6 +12,7 @@ This guide explains how to play, score points, and master combos.
 3. Select a track you own
 4. Pay **100 SSN** to play the selected track
    - Admin users are exempt
+   - Season Tracks are unlocked for Season Pass Holders
 
 ---
 
