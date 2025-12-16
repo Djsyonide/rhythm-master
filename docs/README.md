@@ -1,63 +1,56 @@
-# 🎵 Rhythm Master
-### by **Sublime Sounds**
+# 🎵 Sublime Sounds – Rhythm Master
 
-A blockchain-powered rhythm game built for the **WAX ecosystem**, featuring NFT-powered tracks, video/audio backgrounds, competitive leaderboards, and Season Pass access control.
+**Rhythm Master** is a Web-based rhythm game built on the **WAX blockchain**, featuring music and visual NFTs from the **Sublime Sounds** collection.
 
-> **Status:** 🧪 Beta Testing Phase  
-> **Current Version:** `v0.9.0-beta`
+Players select tracks they own, pay an in-game SSN fee per track (unless admin), and compete for high scores and leaderboard placement through timing, rhythm, and combo mastery.
 
----
-
-## 🚀 Badges
-
-![Version](https://img.shields.io/badge/version-0.9.0--beta-ec4899)
-![Status](https://img.shields.io/badge/status-beta-testing-yellow)
-![Platform](https://img.shields.io/badge/platform-WAX%20Blockchain-purple)
-![Built With](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JavaScript-blue)
-![License](https://img.shields.io/badge/license-proprietary-red)
+This project is currently in **Beta Testing Phase**.
 
 ---
 
-## 🎮 About the Game
+## 🚀 Key Features
 
-**Rhythm Master** is a fast-paced rhythm game where players tap falling notes in time with music NFTs they own on WAX.
-
-Each track NFT can include:
-- 🎵 **Audio**
-- 🎬 **Video backgrounds**
-- 🖼️ **Static artwork**
-
-Gameplay reacts visually and physically with:
-- Lane pulses
-- Sparks
-- Screen shake on **SUBLIME!** hits
-- Score multipliers (x2 / x3)
+- 🎶 Play music & video NFT-backed tracks
+- 🕹️ Skill-based rhythm gameplay
+- 🔗 WAX Wallet login (WaxJS)
+- 💰 Per-track SSN payment system
+- 🏆 Local leaderboard per track & season
+- 🎯 Combo & multiplier mechanics
+- 🧩 Admin access & season management
+- 📱 Mobile & tablet friendly (orientation-aware)
 
 ---
 
-## 🧩 Key Features
+## 🗂️ Seasons
 
-- 🔗 **WAX Cloud Wallet login**
-- 🪙 **NFT-based track selection**
-- 🎥 **Non-looping video backgrounds**
-- ⏸️ **Orientation-aware pause/resume**
-- 📱 **Mobile-first gesture handling**
-- 🏆 **Local leaderboard (per track & season)**
-- 🎟️ **Season Pass NFT gating**
-- 🛡️ **Admin bypass support**
-- ⚡ **Multiplier bars (x2 / x3)**
-- 📊 **Accuracy-based scoring**
+Each **Season** includes:
+- **4 playable tracks**
+- **1 bonus autographed NFT**
+- Separate leaderboards per track
+- Optional season pass gating (configurable)
+
+Seasons are configurable and resettable by admins.
 
 ---
 
-## 🔐 Access Control
+## ⚙️ Tech Stack
 
-### Season Pass Requirement
-Players must own a specific **Season Pass NFT template** to start gameplay.
+- HTML / CSS / Vanilla JavaScript
+- WaxJS (WAX blockchain interaction)
+- AtomicAssets API
+- IPFS (multi-gateway fallback)
+- LocalStorage (leaderboards)
 
-- Start button is disabled if no pass is detected
-- Admin wallets bypass this restriction
+---
 
-```js
-const SEASON_PASS_TEMPLATE_ID = "123456"; // set per season
-const ADMINS = ["a1hd.wam", "fs1r2.wam"];
+## 🧪 Beta Disclaimer
+
+This project is in active development.
+Gameplay balance, features, and mechanics may change between seasons.
+
+---
+
+## 📜 License
+
+All rights reserved unless otherwise specified.
+Music, visuals, and NFTs belong to their respective creators.
