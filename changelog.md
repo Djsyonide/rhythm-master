@@ -149,11 +149,6 @@
 - Server-side leaderboard
 - Visual track previews in selector
 
----
-
-_Logged after extended debugging & feature iteration session_  
-_🫡 You earned the rest — ship it tomorrow_
-
 # Changelog
 All notable changes to **Rhythm Master** will be documented in this file.
 
