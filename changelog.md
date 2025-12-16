@@ -1,3 +1,46 @@
+# 📝 Changelog / Patch Notes (16/12/25)
+
+## [Beta] – Current Development Cycle
+
+### ✅ Added
+- GREAT + SUBLIME combo eligibility
+- Combo milestone celebrations (10 / 20 / 30)
+- Per-track SSN payment system
+- Admin bypass for payments
+- Season pass toggle flag
+- Video-only NFT track support
+- IPFS multi-gateway fallback
+- Per-template NFT de-duplication
+- Improved mobile orientation handling
+
+---
+
+### 🐞 Fixed
+- Muted audio/video on start
+- Duplicate NFT track listings
+- Video-only tracks not starting
+- WaxJS false-negative payment errors
+- Combo counter desync
+- Background image fallback issues
+- Login UI lockups after gameplay
+
+---
+
+### ⚙️ Changed
+- Combo logic simplified & more forgiving
+- GREAT hits now count toward combos
+- Cleaner admin vs player permission logic
+
+---
+
+### 🧪 Known Issues
+- Some NFT images missing metadata (to be resolved)
+- Certain AtomicAssets schemas incomplete
+
+---
+
+More updates coming soon.
+
 # 🎵 Sublime Sounds – Rhythm Master  
 ## Development Log / Changelog (16/12/25)
 
