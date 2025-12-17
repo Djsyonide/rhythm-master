@@ -1,84 +1,97 @@
-# 🎮 Rhythm Master – Player Guide
+# Rhythm Master – Player Guide
 
-Welcome to **Rhythm Master**!  
-This guide explains how to play, score points, and master combos.
-
----
-
-## 🔐 Getting Started
-
-1. Click **Connect WAX**
-2. Log in using your WAX wallet
-3. Select a track you own
-4. Pay **100 SSN** to play the selected track
-   - Admin users are exempt
-   - Season Tracks are unlocked for Season Pass Holders, this ensures that during seasons, if players want to play any of the other tracks and practice with them, they will pay 100 $SSN to do so, $SSN collected goes directly into a pot which is raffled off at the end of the season.
+Welcome to **Rhythm Master**, a rhythm-based music game powered by WAX NFTs.
 
 ---
 
-## 🎵 Tracks
+## 🎮 How to Play
 
-- Tracks are loaded from your **Sublime Sounds NFTs**
-- Each track may include:
-  - Audio
-  - Video background
-  - Cover image
-- Tracks are selected via the dropdown menu
-
----
-
-## 🎯 Gameplay Basics
-
-- Notes fall down 5 lanes
-- Tap or click the lane when the note reaches the hit line
-- Timing accuracy determines your score and combo status
+- Select a track you own.
+- Press **Start** to begin.
+- Hit notes as they cross the hit line using:
+  - A · S · D · F · G keys
+  - Or tap lanes on touch devices.
 
 ---
 
-## 🧠 Hit Ratings
+## 🎯 Judgements
 
-| Rating     | Description                     |
-|-----------|---------------------------------|
-| SUBLIME!  | Perfect timing                  |
-| GREAT!    | Very close timing               |
-| OK        | Slightly off                    |
-| MISS      | No valid hit                    |
+| Result    | Description |
+|----------|-------------|
+| SUBLIME! | Near-perfect timing |
+| GREAT!   | Very accurate |
+| OK       | Acceptable |
+| MISS     | Missed note |
 
 ---
 
 ## 🔥 Combos
 
-- **Combos only increase on:**
-  - ✅ GREAT!
-  - ✅ SUBLIME!
-- Combos reset on:
-  - ❌ OK
-  - ❌ MISS
+Combos increase **only** when hitting:
 
-Combo milestones trigger visual celebrations.
+- ✅ GREAT
+- ✅ SUBLIME
+
+Combo resets on:
+- OK
+- MISS
+
+### Combo Milestones
+- x5 → NICE COMBO!
+- x10 → GREAT COMBO!
+- x20 → AMAZING COMBO!
+- x30 → SUBLIME COMBO!
+- x50 → RHYTHM MASTER!
 
 ---
 
 ## ✨ Multipliers
 
-Special notes can grant temporary score multipliers:
+Special notes activate score multipliers:
 
 - **x2 Multiplier**
+  - Yellow pulsing indicator
+  - Lasts 5 seconds
+
 - **x3 Multiplier**
+  - Red glowing indicator
+  - Lasts 3 seconds
 
 Multipliers stack with combo scoring.
 
 ---
 
-## 🏁 Game End
+## 🔁 Restarts
 
-- The game ends when the track finishes
-- Your score is saved to the leaderboard
-- You must pay again to replay a track (non-admins), uness during season and you are a Pass holder, your 5 tracks will be unlocked for the whole season.
+- Each paid track run grants **3 free restarts**.
+- Restarts:
+  - Do NOT cost SSN
+  - Do NOT submit scores
+- After 3 restarts:
+  - Restart button disappears
+  - Payment required to play again
+
+Admins have unlimited restarts.
+
+---
+
+## 💰 Payments
+
+- Each track requires **100 SSN** to play.
+- Payment applies **per track**, not per session.
+- Restarting does NOT require payment.
 
 ---
 
 ## 🏆 Leaderboards
 
-- Separate leaderboard per track
-- Top 10 scores are saved locally per season
+- Only completed runs submit scores.
+- Your best score per track is always kept.
+- Restarts do not affect leaderboards.
+
+---
+
+## 📱 Mobile Tips
+
+- Rotate your device to landscape for best experience.
+- Touch input supported.
