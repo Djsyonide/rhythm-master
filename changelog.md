@@ -1,3 +1,91 @@
+# Changelog (17/12/25)
+
+All notable changes to **Rhythm Master** will be documented in this file.
+
+---
+
+## [Unreleased]
+
+### Added
+- 🎵 **Free Restart System**
+  - Players may restart the same track **up to 3 times** without repaying SSN.
+  - Restart counter displayed in HUD.
+  - Restart button disappears after all retries are exhausted.
+  - Admin users have unlimited restarts.
+
+- 🔁 **Restart Visual Counter**
+  - HUD shows remaining restarts (e.g. `Restarts left: 2 / 3`).
+  - Counter dims when no restarts remain.
+
+- 🔥 **Combo Milestones**
+  - x5 → NICE COMBO!
+  - x10 → GREAT COMBO!
+  - x20 → AMAZING COMBO!
+  - x30 → SUBLIME COMBO!
+  - x50 → RHYTHM MASTER!
+  - Combo celebrations appear center-screen with animated glow.
+
+- 🎯 **Combo Logic Update**
+  - Combos now increment **only on GREAT and SUBLIME hits**.
+  - Combo resets on OK or MISS.
+
+- ✨ **Dynamic Multiplier UI**
+  - x1 shown in neutral circle.
+  - x2 activates pulsing yellow multiplier circle.
+  - x3 activates glowing red multiplier circle.
+  - Visuals persist only while multiplier is active.
+
+- 🐢➡️⚡ **Dynamic Note Speed**
+  - Notes fall slightly slower at the start of a track.
+  - Speed gradually increases over time.
+  - Beat timing remains unchanged (pure visual scaling).
+
+- 🎥 **Video-Only Track Support**
+  - Tracks with video but no audio now play correctly.
+  - Beat timing derived from video duration.
+
+- 🔊 **Audio Autoplay Fix**
+  - Ensures audio and video unmute correctly on user interaction.
+  - Prevents muted playback after restart or login.
+
+- 🧠 **IPFS Gateway Fallback System**
+  - Automatic fallback across multiple IPFS gateways for audio, video, and images.
+  - Improves reliability and load success for NFT media.
+
+- 🧩 **NFT De-duplication**
+  - Prevents duplicate tracks by template ID.
+  - Upgrades missing images if a later asset provides one.
+
+- 🔐 **Wallet Improvements**
+  - Anchor Wallet support added alongside WAX Cloud Wallet.
+  - Login buttons correctly disable during gameplay.
+
+- 🏆 **Leaderboard Improvements**
+  - Scores only submitted on completed runs.
+  - Restarted runs do NOT submit scores.
+  - Higher score always preserved per user/track/season.
+
+---
+
+### Fixed
+- 🐞 Restarting no longer consumes SSN.
+- 🐞 Payment message no longer shows during free restarts.
+- 🐞 Combo counter no longer increments on OK hits.
+- 🐞 Blinking text cursor removed globally.
+- 🐞 Lanes disappearing bug resolved.
+- 🐞 Muted playback bug resolved.
+- 🐞 Anchor blockchain ID configuration issue resolved.
+- 🐞 Duplicate NFT track entries resolved.
+- 🐞 Leaderboard submission triggering incorrectly on restart fixed.
+
+---
+
+### Changed
+- Restart logic refactored to cleanly separate:
+  - Paid runs
+  - Free restarts
+  - Exhausted retry states
+
 # 📝 Changelog – Rhythm Master (17/12/25)
 
 ## 🚀 New Features
