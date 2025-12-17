@@ -79,12 +79,9 @@ Combos are earned **only from GREAT and SUBLIME hits**.
 
 ---
 
-### 👛 Wallet Support
+### Wallet Support
 - ✅ WAX Cloud Wallet
-- ⚠️ Anchor Wallet (beta – chain ID sensitive)
-
-> Anchor requires a valid WAX chain ID.  
-> Incorrect IDs will cause `Unknown Blockchain` errors.
+- ✅ Anchor Wallet
 
 ---
 
