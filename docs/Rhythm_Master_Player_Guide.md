@@ -1,100 +1,55 @@
 # Rhythm Master – Player Guide
 
-Welcome to **Rhythm Master**, a rhythm-based music game powered by WAX NFTs.
+Welcome to **Rhythm Master**, a skill-based rhythm game on WAX.
 
 ---
 
-## 🎮 How to Play
-
-- Select a track you own.
-- Pay 100 SSN.  During seasons, season tracks are unlocked for Season Pass Holders, admins bypass SSN Payment
-- Press **Start** to begin.
-- Hit notes as they cross the hit line using:
-  - A · S · D · F · G keys
-  - Mouse
-  - Or tap lanes on touch devices.
+## 🎵 How to Play
+- Select a track you own
+- Pay **100 SSN** to start (admins excluded), season tracks unlocked for Season Pass Holders, no SSN payment required
+- Hit falling notes as they cross the glowing hit line
+- Use keyboard (A S D F G) or touch on mobile
 
 ---
 
 ## 🎯 Judgements
+- **SUBLIME!** – near-perfect timing
+- **GREAT!** – strong timing
+- **OK** – acceptable
+- **MISS** – too early or too late
 
-| Result    | Description |
-|----------|-------------|
-| SUBLIME! | Near-perfect timing |
-| GREAT!   | Very accurate |
-| OK       | Acceptable |
-| MISS     | Missed note |
+Only **GREAT** and **SUBLIME** hits build combos.
 
 ---
 
 ## 🔥 Combos
-
-Combos increase **only** when hitting:
-
-- ✅ GREAT
-- ✅ SUBLIME
-
-Combo resets on:
-- OK
-- MISS
-
-### Combo Milestones
 - x5 → NICE COMBO!
 - x10 → GREAT COMBO!
 - x20 → AMAZING COMBO!
 - x30 → SUBLIME COMBO!
 - x50 → RHYTHM MASTER!
 
----
-
-## ✨ Multipliers
-
-Special notes activate score multipliers:
-
-- **x2 Multiplier**
-  - Yellow pulsing indicator
-  - Lasts 5 seconds
-
-- **x3 Multiplier**
-  - Red glowing indicator
-  - Lasts 3 seconds
-
-Multipliers stack with combo scoring.
+Combos increase score multipliers and trigger visual effects.
 
 ---
 
 ## 🔁 Restarts
-
-- Each paid track run grants **3 free restarts**.
-- Restarts:
-  - Do NOT cost SSN
+- You get **3 free restarts per track**
+- Free restarts:
   - Do NOT submit scores
-- After 3 restarts:
-  - Restart button disappears
-  - Payment required to play again
-
-Admins have unlimited restarts.
-
----
-
-## 💰 Payments
-
-- Each track requires **100 SSN** to play.
-- Payment applies **per track**, not per session.
-- Season Tracks are unlocked for Season Pass Holders and do not require SSN Payment.
-- Restarting does NOT require payment.
+  - Do NOT require SSN payment
+- After 3 restarts, payment is required again
 
 ---
 
 ## 🏆 Leaderboards
-
-- Only completed runs submit scores.
-- Your best score per track is always kept.
-- Restarts do not affect leaderboards.
+- Only your **best score per track per season** is kept
+- Lower scores never overwrite higher ones
+- Leaderboards reset each season
 
 ---
 
 ## 📱 Mobile Tips
-
-- Rotate your device to landscape for best experience.
-- Touch input supported.
+- Rotate your device to landscape
+- Tap lanes directly
+- Fullscreen activates automatically for best performance
