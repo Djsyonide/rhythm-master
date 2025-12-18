@@ -81,6 +81,7 @@ Admins have unlimited restarts.
 
 - Each track requires **100 SSN** to play.
 - Payment applies **per track**, not per session.
+- Season Tracks are unlocked for Season Pass Holders ad do not require SSN Payment.
 - Restarting does NOT require payment.
 
 ---
