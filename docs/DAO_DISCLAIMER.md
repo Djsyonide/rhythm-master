@@ -36,4 +36,20 @@ By using this software, you agree:
 
 ---
 
+## DAO Transparency & Reward Calculations
+
+Rhythm Master uses a public, deterministic reward calculator to ensure
+fairness and transparency.
+
+- Season Pass revenue is allocated using fixed percentages
+- Calculations are published via a public Google Sheets document
+- Treasury wallets and payouts are verifiable on-chain
+- No retroactive changes are permitted once a season begins
+
+This calculator serves as the reference source for:
+- Player rewards
+- Artist compensation
+- DAO reserves
+- Season sustainability
+
 This document is not legal advice.
