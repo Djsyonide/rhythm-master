@@ -8,7 +8,7 @@ Welcome to **Rhythm Master**, a skill-based rhythm game on WAX.
 - Select a track you own
 - Pay **100 SSN** to start (admins excluded), season tracks unlocked for Season Pass Holders, no SSN payment required
 - Hit falling notes as they cross the glowing hit line
-- Use keyboard (A S D F G), Mouse or touch on mobile
+- Use keyboard (A S D F G), mouse or touch on mobile
 
 ---
 
