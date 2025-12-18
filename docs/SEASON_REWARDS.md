@@ -1,116 +1,121 @@
-# Rhythm Master – Season Rewards & Economics
+# Rhythm Master – Season Rewards & Economy
 
-This document outlines how Season rewards are structured, funded, and distributed
-for competitive Rhythm Master Seasons.
+This document outlines the **Season Pass pricing**, **reward pools**, and **token distribution model** for Rhythm Master competitive seasons.
 
 ---
 
 ## 🎟️ Season Pass Pricing
 
-- **Season Pass Price:** 50 WAX
-- **Access Granted:**
-  - All 5 Season Tracks
-  - Eligibility for all Season rewards
-  - Leaderboards & Season Rankings
-- **No additional SSN required** to play Season Tracks once pass is owned
+- **Season Pass Price:** **50 WAX**
+- **Access:** Unlocks *all official Season Tracks*
+- **Validity:** One full season (6 weeks)
 
 ---
 
 ## 🗓️ Season Structure
 
 - **Season Length:** 6 weeks
-- **Off-Season Break:** 2 weeks
+- **Break Between Seasons:** 2 weeks
 - **Tracks Per Season:** 5 total
-  - 4 × Mythic NFT Tracks
-  - 1 × Bonus Autographed NFT Track
+  - 4 × Mythic Track NFTs
+  - 1 × Bonus Autographed NFT (special advantage)
 
 ---
 
-## 🏆 Reward Categories
+## 💰 Revenue Allocation Model (Per Season)
 
-Season Pass revenue is divided into **four core pools**:
+Season Pass revenue is allocated as follows:
 
-| Pool | Allocation |
-|---|---|
-| Player Track Rewards | 45% |
-| Season Champion Prize | 20% |
-| Artist Reward Pool | 15% |
-| DAO / Treasury / Ops | 20% |
+| Allocation Category | % of Revenue |
+|--------------------|--------------|
+| Player Prize Pool | **55%** |
+| Artist Reward Pool (Sublime Sounds Artists) | **15%** |
+| Platform / Ops / Development | **15%** |
+| DAO Treasury Reserve | **10%** |
+| Marketing & Partnerships | **5%** |
 | **Total** | **100%** |
 
 ---
 
-## 🏅 Track Rewards (45%)
+## 🏆 Player Prize Pool Breakdown (55%)
 
-Each of the **5 Season Tracks** has its own leaderboard.
+The **Player Prize Pool** is split as follows:
 
-For **each track**:
-- 🥇 1st Place
-- 🥈 2nd Place
-- 🥉 3rd Place
-
-Rewards are paid in:
-- **SSN**
-- **WUF**
-- Optional **WAX** bonus (for higher pass sales)
+| Category | % of Player Pool |
+|-------|------------------|
+| Track Leaderboards (Top 3 per track) | **70%** |
+| Overall Season Champion | **30%** |
 
 ---
 
-## 👑 Season Champion (20%)
+## 🎮 Track Leaderboard Rewards (Per Track)
 
-The **Season Champion** is determined by:
+Each track rewards the **Top 3 players**:
+
+| Placement | % of Track Pool |
+|---------|------------------|
+| 🥇 1st | 50% |
+| 🥈 2nd | 30% |
+| 🥉 3rd | 20% |
+
+---
+
+## 👑 Overall Season Champion
+
 - Highest **combined score across all 5 Season Tracks**
-- Only the **best score per track** counts
-
-Champion receives:
-- Large SSN reward
-- WUF bonus
-- Optional WAX prize
-- Special recognition (badge / NFT / leaderboard highlight)
+- Receives:
+  - **30% of Player Prize Pool**
+  - Special **Champion Badge**
+  - Exclusive cosmetic / NFT (future seasons)
 
 ---
 
 ## 🎵 Artist Reward Pool (15%)
 
-- Distributed **equally across all Sublime Sounds artists** featured in the Season
-- Paid in **WAX and/or SSN**
-- Rewards artists directly for:
-  - Track usage
-  - Community engagement
-  - Competitive play around their music
-
-This pool scales directly with Season Pass sales.
+- Distributed equally among:
+  - Artists whose tracks appear in the season
+- Purpose:
+  - Reward creators
+  - Encourage high-quality submissions
+  - Sustain the Sublime Sounds ecosystem
 
 ---
 
-## 🏛️ DAO / Treasury (20%)
+## 🧮 Token Distribution (Exact Splits)
 
-Used for:
-- Future Seasons
-- Prize pool stability
-- Development & maintenance
-- Emergency reserves
-- Community-voted initiatives (future DAO)
+All Player Rewards are distributed in **three tokens**:
 
----
-
-## 🧮 Practice Tracks (Non-Season)
-
-- Any **non-Season track** during an active Season costs:
-  - **100 SSN per play**
-- Practice plays:
-  - Do **not** count toward Season leaderboards
-  - Do **not** affect Season rankings
+| Token | % of Player Rewards | Purpose |
+|-----|---------------------|--------|
+| **SSN** | **60%** | Core progression & utility |
+| **WUF** | **25%** | Community & engagement token |
+| **WAX** | **15%** | Real-value blockchain reward |
 
 ---
 
-## ⚠️ Important Notes
+## 🧠 Bonus: Autographed NFT Advantage
+
+- One **Autographed NFT** included per season
+- Grants:
+  - Slight score multiplier bonus
+  - Increased chance of achieving higher accuracy
+- Advantage is **minor, non-pay-to-win**
+- Does **not guarantee leaderboard wins**
+
+---
+
+## 🔐 Fair Play Commitment
+
+- No randomness in scoring
+- Skill-based only
+- All reward logic transparent
+- Leaderboards verifiable via Supabase + on-chain payments
+
+---
+
+## ⚠️ Disclaimer
 
 - Rewards are **not guaranteed**
-- Token values fluctuate
-- All payouts are on-chain and verifiable
-- Rules may change **between seasons**, never mid-season
-
----
-
-Built for fair competition, sustainability, and artist-first rewards.
+- Token values may fluctuate
+- No financial return is promised
+- Rhythm Master is a skill-based game, not an investment
