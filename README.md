@@ -94,10 +94,14 @@ This repository contains the live beta version currently undergoing community te
 
 -Blockchain transactions are irreversible — always verify wallet prompts carefully.
 
+---
+
 ##🧠 **Credits**
 
 -Built by Sublime Sounds
 -Powered by WAX, SSN, and AtomicAssets
+
+---
 
 ## ⚙️ Configuration Flags
 
