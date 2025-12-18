@@ -1,92 +1,108 @@
 # 🎵 Rhythm Master – Beta
 
-**Rhythm Master** is a blockchain-powered rhythm game built on **WAX**, combining skill-based gameplay, NFTs, and seasonal competition.  
-This repository contains the live beta implementation.
+**Rhythm Master** is a blockchain-powered rhythm game built on **WAX**, featuring NFT-based tracks, skill-based scoring, and seasonal competition.
+
+This repository contains the live beta version currently undergoing community testing.
 
 ---
 
-## 🚀 Current Features
+## 🚀 Features
 
 ### 🎮 Core Gameplay
-- 5-lane rhythm gameplay (keyboard + pointer support)
-- Dynamic note spawning synced to audio or video
-- Accurate hit detection with timing windows
-- Score & combo-based progression
-- Visual feedback:
-  - SUBLIME / GREAT / OK / MISS judgements
-  - Lane flashes, sparks, screen shake
-  - Multiplier pickups (x2, x3)
+- 5-lane rhythm gameplay (keyboard & touch supported)
+- Real-time scoring with accuracy-based judgments:
+  - SUBLIME!
+  - GREAT!
+  - OK
+  - MISS
+- Combos build only on **GREAT!** and **SUBLIME!** hits
+- Visual effects for hits, combos, and multipliers
+
+### 🔁 Restart System
+- Each paid track run allows **up to 3 free restarts**
+- Restarts:
+  - Do not submit scores
+  - Do not require SSN payment
+- After retries are exhausted, payment is required again
+
+### 🎯 Combo Milestones
+| Combo | Message |
+|------:|---------|
+| x5 | NICE COMBO! |
+| x10 | GREAT COMBO! |
+| x20 | AMAZING COMBO! |
+| x30 | SUBLIME COMBO! |
+| x50 | RHYTHM MASTER! |
 
 ---
 
-### 🔥 Combo System
-Combos are earned **only from GREAT and SUBLIME hits**.
+## 💰 Economy & Access
 
-| Combo | Display |
-|------|--------|
-| x5   | **NICE COMBO!** (green) |
-| x10  | **GREAT COMBO!** (blue) |
-| x20  | **AMAZING COMBO!** (larger text) |
-| x30  | **SUBLIME COMBO!** (pink) |
-| x50  | **RHYTHM MASTER!** (large gold text) |
+### SSN Payments
+- **100 SSN per track run**
+- Payment required again after a completed run
+- Admin users bypass payments
 
-- Combo celebrations appear centered for ~2 seconds
-- Combo resets on MISS or OK
+### Season Pass (Configurable)
+- Season Pass requirement can be enabled/disabled via config
+- When enabled, a valid NFT is required to play
 
 ---
 
-### 🎧 Media Support
-- **Audio tracks via IPFS**
-- **Video-only or Audio-only NFTs supported**
-- Automatic IPFS gateway fallback:
-  - Pinata
-  - Cloudflare
-  - ipfs.io
-- Media auto-unmutes once gameplay starts
+## 🧠 NFTs & Media
+- Tracks are loaded from **AtomicAssets NFTs**
+- Supported media:
+  - Audio (IPFS)
+  - Video (IPFS)
+  - Image fallback for backgrounds
+- IPFS gateway fallback ensures resilience
+- Duplicate templates are filtered automatically
 
 ---
 
-### 🧠 NFT Integration
-- Tracks are loaded from the `sublimesound` AtomicAssets collection
-- NFTs are deduplicated by **template ID**
-- Supports:
-  - `audio`
-  - `video / animation_url`
-  - `image`
-- Track selector populated dynamically from owned NFTs
+## 🔐 Wallet Support
+- WAX Cloud Wallet
+- Anchor Wallet
+- Wallet UI locks after successful login
+- Wallet badge shows active wallet type
 
 ---
 
-### 🏆 Leaderboards (Server-Side)
-- Powered by **Supabase**
-- Per-season & per-track leaderboards
-- Stores:
-  - Best score
-  - Max combo
-  - Autograph flag (future use)
-- Only higher scores overwrite previous entries
+## 🏆 Leaderboards
+- Server-side leaderboard using Supabase
+- Scores are stored per:
+  - Season
+  - Track
+  - User
+- Only highest score per user is kept
+- Restart attempts never submit scores
 
 ---
 
-### 💰 Payments & Economy
-- **100 SSN per track play** (non-admin users)
-- Admin accounts bypass payment
-- Payment handled via:
-  - WAX Cloud Wallet
-  - Anchor Wallet
-- Transaction links provided after payment
-- Payment resets per track change
+## 📱 Mobile Support
+- Touch input optimized
+- Fullscreen gameplay on track start
+- Orientation hint shown for portrait mode
+- Mobile timing forgiveness enabled
 
 ---
 
-### Wallet Support
-- ✅ WAX Cloud Wallet
-- ✅ Anchor Wallet
+## ⚙️ Configuration Flags
 
----
-
-### 🔐 Season Pass (Toggleable)
-- Season Pass logic is present but **currently disabled**
-- Controlled via:
 ```js
 const ENABLE_SEASON_PASS = false;
+const SSN_AMOUNT = "100.00000000";
+const MAX_RESTARTS = 3;
+const HIT_WINDOW = 0.18;
+
+## ⚙️ **Beta Disclaimer**
+
+Rhythm Master is currently in beta.
+Gameplay mechanics, balance, and UI are subject to change based on testing feedback.
+
+Blockchain transactions are irreversible — always verify wallet prompts carefully.
+
+🧠 **Credits**
+
+Built by Sublime Sounds
+Powered by WAX, SSN, and AtomicAssets
