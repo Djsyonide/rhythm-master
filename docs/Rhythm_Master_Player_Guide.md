@@ -5,7 +5,7 @@ Welcome to **Rhythm Master**, a skill-based rhythm game on WAX.
 ---
 
 ## 🎵 How to Play
-- Select a track you own
+- Login with WAX Cloud Wallet or Anchor Wallet (Only compatible in external browsers Chrome, Safari, Edge, Firefox - not TG browser)
 - Pay **100 SSN** to start (admins excluded), season tracks unlocked for Season Pass Holders, no SSN payment required
 - Hit falling notes as they cross the glowing hit line
 - Use keyboard (A S D F G), mouse or touch on mobile
