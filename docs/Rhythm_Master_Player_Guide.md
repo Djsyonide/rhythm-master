@@ -11,6 +11,7 @@ Welcome to **Rhythm Master**, a rhythm-based music game powered by WAX NFTs.
 - Press **Start** to begin.
 - Hit notes as they cross the hit line using:
   - A · S · D · F · G keys
+  - Mouse
   - Or tap lanes on touch devices.
 
 ---
