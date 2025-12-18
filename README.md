@@ -96,7 +96,7 @@ This repository contains the live beta version currently undergoing community te
 
 ---
 
-##🧠 **Credits**
+## 🧠 **Credits**
 
 -Built by Sublime Sounds
 -Powered by WAX, SSN, and AtomicAssets
