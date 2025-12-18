@@ -95,14 +95,16 @@ const SSN_AMOUNT = "100.00000000";
 const MAX_RESTARTS = 3;
 const HIT_WINDOW = 0.18;
 
+---
+
 ## ⚙️ **Beta Disclaimer**
 
-Rhythm Master is currently in beta.
-Gameplay mechanics, balance, and UI are subject to change based on testing feedback.
+-Rhythm Master is currently in beta.
+-Gameplay mechanics, balance, and UI are subject to change based on testing feedback.
 
-Blockchain transactions are irreversible — always verify wallet prompts carefully.
+-Blockchain transactions are irreversible — always verify wallet prompts carefully.
 
-🧠 **Credits**
+##🧠 **Credits**
 
-Built by Sublime Sounds
-Powered by WAX, SSN, and AtomicAssets
+-Built by Sublime Sounds
+-Powered by WAX, SSN, and AtomicAssets
