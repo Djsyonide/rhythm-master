@@ -1,5 +1,74 @@
 # Changelog (21/12/25)
 
+All notable changes to **Rhythm Master** will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project follows semantic versioning where applicable.
+
+---
+
+## [Unreleased]
+
+### Added
+- Admin-only **New Season** functionality using a dynamic `SEASON_ID`
+- Persistent season tracking via `localStorage`
+- Admin-only **Clear Track Leaderboard** button per track
+- Secure leaderboard reset flow via Supabase Edge Function
+- Admin UI visibility handling (`updateAdminUI`)
+- Leaderboard auto-refresh after admin actions
+- Unlimited restarts for admin accounts
+- Improved leaderboard empty-state handling per season/track
+
+### Changed
+- Leaderboards are now scoped by **season + track**
+- Season resets no longer delete historical data
+- Admin users bypass SSN payment requirements
+- Restart counter UI adapts based on admin status
+- Leaderboard reloads automatically on track change
+
+### Fixed
+- Fixed missing click handler for admin season reset button
+- Fixed duplicate `SEASON_ID` declaration causing script failure
+- Fixed admin buttons not appearing after login
+- Fixed missing `hitLine` DOM reference
+- Prevented leaderboard reset actions from affecting other tracks
+- Improved stability when switching tracks mid-session
+
+---
+
+## [0.9.0] – Beta Testing Phase
+
+### Added
+- Core rhythm gameplay loop
+- Combo system with visual celebrations
+- Dynamic multiplier notes (x2 / x3 / NFT)
+- Supabase-powered global leaderboard
+- Track-based scoring and ranking
+- WAX & Anchor wallet login support
+- SSN token payment gating per track
+- NFT-trigger mechanics (drop & claim hooks)
+- Mobile fullscreen + orientation handling
+- Restart limits for non-admin players
+- IPFS fallback loading for audio/video assets
+
+### Known Issues
+- Admin list is client-side only (server-side verification pending)
+- NFT drop logic relies on external function availability
+- No public season archive viewer yet
+
+---
+
+## Planned
+- Admin control panel UI
+- Server-side admin verification
+- Season history & archive viewer
+- Automated season rollover
+- Per-track analytics dashboard
+
+---
+
+# Changelog (21/12/25)
+
 All notable changes to Rhythm Master will be documented in this file.
 
 ---
