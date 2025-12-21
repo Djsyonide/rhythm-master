@@ -2,6 +2,104 @@
 
 All notable changes to **Rhythm Master** will be documented in this file.
 
+---
+
+## [Unreleased]
+
+### 🎮 Gameplay Improvements
+- Added **rare NFT drop notes** (green pulsating bars) that can appear during gameplay.
+- NFT notes display **“NFT”** on the bar and trigger a **large on-screen “N F T!” celebration** on a SUBLIME hit.
+- Introduced **SSN reward notes**:
+  - `1 × SSN`
+  - `10 × SSN`
+  - `100 × SSN`
+- SSN notes glow and pulse in the same style as special multiplier notes.
+- SSN rewards are **accumulated per run** and settled at game end.
+- Added **SSN Earned** display to the Game Over screen.
+- Added **“NFT WON” badge** to results when an NFT is successfully awarded.
+- Added **confetti burst effect** when an NFT is won.
+
+### 🧠 Difficulty & Feel
+- Notes now **start slightly slower and gradually increase speed** over the duration of a track without breaking beat sync.
+- Added a **small hit forgiveness buffer** to improve mobile play accuracy.
+- Restart logic improved:
+  - Up to **3 free restarts** per paid run.
+  - Restarts do **not** record scores or require re-payment.
+  - Payment is required again only after all restarts are exhausted.
+- Visual restart counter added to the HUD.
+
+### 🔐 Wallet & UX
+- Login buttons (WAX + Anchor) now correctly **disable after login**, regardless of wallet type.
+- Wallet badge (WAX / Anchor) added next to username and **properly centered**.
+- “Pay 100 SSN for this track” text is now shown immediately after login when required.
+- Caret (blinking text cursor) disabled globally for cleaner UI.
+- Fullscreen mode now **only activates on mobile devices**, not desktop browsers.
+- Improved Telegram handling with guidance to open in an external browser.
+
+### 🏆 Leaderboards & Scoring
+- Scores are only recorded when:
+  - The player finishes normally, and
+  - The score is higher than their previous best for that track.
+- Restarted runs never overwrite leaderboard scores.
+- Track list is now **sorted alphabetically**.
+
+### 🪙 Token & NFT Payouts
+- Implemented **server-side SSN settlement** via Supabase Edge Function:
+  - Sends SSN from project wallet to player.
+  - Records payouts in `ssn_payouts` table.
+  - Prevents duplicate payouts per track/season.
+- Implemented **secure NFT sending** via Supabase Edge Function:
+  - Sends NFTs directly from the project wallet.
+  - Enforces a **daily NFT send cap**.
+  - Logs all sends in `nft_sends`.
+- Added **NFT eligibility logic**:
+  - Only SUBLIME hits qualify.
+  - Max **1 NFT per player per season**.
+  - Global cooldown between NFT drops.
+  - Very low probability to ensure rarity.
+
+### 🛡️ Security & Anti-Abuse
+- All NFT and SSN transfers are **server-side only** (no private keys in frontend).
+- Service Role Key is never exposed to the browser.
+- Added safeguards against:
+  - Double payouts
+  - Rapid repeat NFT drops
+  - Client-side tampering
+- Split logic cleanly between:
+  - Client trigger
+  - Eligibility check
+  - Secure transfer execution
+
+### 🧩 Backend & Infrastructure
+- Added new Supabase tables:
+  - `nft_pool`
+  - `nft_drops`
+  - `nft_sends`
+  - `ssn_payouts`
+  - `analytics_events`
+- Added analytics tracking for:
+  - Wallet logins
+  - SSN payments
+  - Gameplay events
+- Added Supabase Edge Functions:
+  - `new-nft-drop`
+  - `send-nft`
+  - `settle-ssn`
+
+---
+
+## [Beta Notes]
+- NFT drops are intentionally **extremely rare**.
+- Some features (season pass, autograph NFTs) are scaffolded for future seasons.
+- This build is intended for controlled beta testing before Season 1 launch.
+
+---
+
+
+# Changelog (21/12/25)
+
+All notable changes to **Rhythm Master** will be documented in this file.
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows semantic versioning where applicable.
 
