@@ -1,3 +1,140 @@
+# Changelog
+
+## 📅 Date
+**2025-12-21**
+
+---
+
+## 🎮 Rhythm Master (Game Client)
+
+### Added
+- **Accumulated SSN Tracking**
+  - SSN earned during a run is now accumulated in real time.
+  - SSN total is displayed at Game Over.
+- **Wallet Re-scan Button**
+  - Added “Re-scan Wallet” button to allow users to refresh NFT ownership without reconnecting.
+  - Button correctly reuses existing NFT loading logic.
+- **NFT Win UI**
+  - NFT win badge added to Game Over screen.
+  - Optional transaction link displayed when txid is returned.
+- **Failsafe Game End**
+  - Hard timeout to prevent stuck runs if audio/video fails.
+
+### Fixed
+- Game Over screen not appearing in some end states.
+- Restart logic incorrectly consuming paid runs.
+- Multiple NFT drop triggers per run (client-side safety flag added).
+- Orientation pause/resume issues on mobile.
+- Audio/video desync edge cases.
+
+### Changed
+- NFT drop logic now routed exclusively through `new-nft-drop` edge function.
+- SSN payout logic deferred until end of run (no per-note transfers).
+- Cleaner separation between **paid runs**, **free restarts**, and **admin bypass**.
+
+---
+
+## 🧠 NFT & Wallet Logic
+
+### Added
+- **NFT Pool System**
+  - Introduced `nft_pool` table to manage claimable NFTs.
+  - NFTs marked as claimed after successful transfer.
+- **Server-Side NFT Eligibility**
+  - Enforced:
+    - Sublime-only hits
+    - One NFT per user per season
+    - Global cooldown
+    - Probability-based drops
+
+### Fixed
+- NFT drops not triggering `send-nft` due to missing linkage.
+- Invalid returns and misplaced logic in `new-nft-drop`.
+- Missing JSON responses causing edge runtime crashes.
+
+---
+
+## 💰 SSN Token System
+
+### Added
+- **End-of-Game SSN Settlement**
+  - SSN payouts are now settled once per run via `settle-ssn`.
+- **Anti Double-Payout Protection**
+  - Prevents duplicate payouts per user / track / season.
+- **Blockchain Transaction Logging**
+  - SSN transfers now record txid in backend.
+
+### Fixed
+- SSN not being transferred on-chain.
+- SSN payouts not being recorded in database.
+- Authorization handling between anon key (client) and service role (edge).
+
+### Known Issue Resolved
+- `payout_key` column mismatch in `ssn_payouts`
+  - Schema updated or insert logic aligned with actual table columns.
+
+---
+
+## 🛠 Supabase Edge Functions
+
+### `new-nft-drop`
+- Fully rewritten and stabilized.
+- Correct CORS handling.
+- Proper Supabase client usage.
+- Calls `send-nft` internally.
+- Logs NFT drops to database.
+
+### `send-nft`
+- Verified invocation from `new-nft-drop`.
+- Handles WAX NFT transfer.
+- Records NFT sends.
+
+### `settle-ssn`
+- Rewritten for correctness and safety.
+- Performs:
+  - Authorization check
+  - Anti-duplicate payout check
+  - WAX SSN transfer
+  - Database insert with txid
+- Error handling improved with explicit logging.
+
+---
+
+## 🔐 Wallet Integration
+
+### Fixed
+- WAX login failures caused by UI state conflicts.
+- Anchor login failures due to variable misuse and undefined references.
+- Rescan button being disabled incorrectly after login.
+
+### Improved
+- Clear wallet badge (WAX / Anchor).
+- Unified post-login flow for both wallet types.
+
+---
+
+## 📄 Documentation
+
+### Added
+- **Expanded Whitepaper**
+  - Full rewrite from litepaper.
+  - Includes Rhythm Master gameplay, SSN utility, NFT mechanics.
+- **DAO Proposal Version**
+  - Governance-focused version of whitepaper.
+  - Suitable for WaxDAO or community voting.
+
+---
+
+## ⚠️ Notes
+- SSN payouts require correct `ssn_payouts` schema alignment.
+- NFT visibility depends on AtomicAssets API + valid metadata (audio/video fields).
+- Users may need several seconds after purchase before NFTs appear via API.
+
+---
+
+## ✅ Overall Status
+**Core gameplay, NFT drops, and SSN payouts are now fully wired end-to-end and production-ready.**
+
 # Changelog (21/12/25)
 
 ## [Unreleased]
