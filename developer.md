@@ -44,3 +44,35 @@
   - track name
   - user account
 - Only higher scores overwrite existing records
+
+- ## NFT Drop Flow
+1. Player hits green note with SUBLIME
+2. Client requests `/send-nft`
+3. Supabase Edge Function:
+   - Verifies authorization
+   - Enforces daily cap
+   - Selects random Mythic NFT
+   - Transfers via AtomicAssets
+   - Logs transaction
+
+## Supabase Tables
+### nft_sends
+- id
+- to_account
+- asset_id
+- txid
+- send_date
+- reason
+
+## Environment Variables
+- WAX_RPC
+- WAX_PRIVATE_KEY
+- PROJECT_WALLET
+- SUPABASE_URL
+- SERVICE_ROLE_KEY
+
+## Testing
+- Test mode toggle supported
+- Edge Functions testable via Supabase dashboard
+
+---
