@@ -33,6 +33,14 @@ Combos increase score multipliers and trigger visual effects.
 
 ---
 
+## 🎁 NFT Drops
+- Very rare **green NFT note**
+- Must be hit with **SUBLIME**
+- Instantly sends a Mythic NFT
+- Drops are capped globally per day
+
+---
+
 ## 🔁 Restarts
 - You get **3 free restarts per track**
 - Free restarts:
